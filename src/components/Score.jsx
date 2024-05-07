@@ -1,8 +1,21 @@
 import React from 'react'
 
-function Score() {
+function Score({grade}) {
   return (
-    <div>Score</div>
+    <div className='score'>
+      <div> {grade.score > 70 ? (
+        <>
+        <div style={{color:'green'}}>Score:{grade.score}</div>
+        </>
+      ) : (
+        <>
+        <div style={{color:'red'}}>Score:{grade.score}</div>
+        </>
+      )
+      }</div>
+      <hr/>
+      <div style={{fontSize:'11px'}}>Date: {grade.date}</div> 
+    </div>
   )
 }
 

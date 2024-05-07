@@ -11,6 +11,12 @@ function App() {
         return (
           <>
             <Learner data={student}/>
+            <div className='btnContainer'>
+              <button>Update State</button>
+              <button>Add Learner</button>
+              <button>Something Else</button>
+
+            </div>
           
           </>
           
