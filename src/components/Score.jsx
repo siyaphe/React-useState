@@ -3,13 +3,13 @@ import React from 'react'
 function Score({grade}) {
   return (
     <div className='score'>
-      <div> {grade.score > 70 ? (
+      <div> {grade.score >= 85 ? (
         <>
-        <div style={{color:'green'}}>Score:{grade.score}</div>
+        <div style={{color:'green'}}>Score: {grade.score}</div>
         </>
       ) : (
         <>
-        <div style={{color:'red'}}>Score:{grade.score}</div>
+        <div style={{color:'red'}}>Score: {grade.score}</div>
         </>
       )
       }</div>
